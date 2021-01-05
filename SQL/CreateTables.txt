@@ -1,0 +1,18 @@
+DROP TABLE user_items;
+DROP TABLE site_users;
+
+CREATE TABLE site_users(
+	u_id VARCHAR(30) PRIMARY KEY,
+    u_pass VARCHAR(30) NOT NULL,
+    u_email VARCHAR(30) NOT NULL);
+    
+CREATE TABLE user_items(
+	u_id VARCHAR(30) NOT NULL,
+    i_name VARCHAR(55) NOT NULL,
+    i_priority VARCHAR(10) NOT NULL,
+    i_notes VARCHAR(255),
+    i_link VARCHAR(2083),
+    FOREIGN KEY (u_id)
+		REFERENCES site_users(u_id)
+        ON DELETE CASCADE);
+commit;

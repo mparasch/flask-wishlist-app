@@ -1,0 +1,14 @@
+{% extends "login_base.html" %} {% block login_content %}
+<h2>Create New Account</h2>
+<div id=login-new>
+    <form method="post">
+        <label for="uname"><b>Username</b>
+            <input type="text" placeholder="Enter Username" name="uname" required minlength="6"></label>
+        <label for="pass"><b>Password</b><input type="password" placeholder="Enter Password" name="pass" minlength="6"></label>
+        <label for="email"><b>Email</b><input type="email" placeholder="Primary Email" name="email" required></label>
+        <br><br>
+        <button type="button" value="" onclick="history.back()">Back</button>
+        <button type="submit" value="">Create Account</button>
+    </form>
+</div>
+{% endblock%}

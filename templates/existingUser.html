@@ -1,0 +1,20 @@
+{% extends "login_base.html" %} {% block login_content %}
+<h2>Existing User Login</h2>
+<div id=login>
+    <form method="post">
+        <label for="uname"><b>Username</b></label>
+        <select name="uname" id="uname">
+        {% for u in user_list %}
+            <option value= {{ u }} SELECTED>{{ u }}</option>
+        {% endfor %}
+        </select>
+        <br><br>
+        <label for="pass"><b>Passowrd</b>
+            <input type="password" name="pass" minlength="6">
+        </label>
+        <br><br>
+        <button type="button" value="Back" onclick="history.back()">Back</button>
+        <button type="submit" value="">Login</button>
+    </form>
+</div>
+{% endblock%}

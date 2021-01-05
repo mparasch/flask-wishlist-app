@@ -1,0 +1,22 @@
+{% extends "base.html" %} {% block l_container %}
+<h3 class=header>My Wishlist</h3>
+<table class=listTable>
+    <tr>
+        <th>Item Name</th>
+        <th>Priority</th>
+        <th>Notes</th>
+    </tr>
+    {% for row in data %}
+    <tr>
+        {% for d in row %} {% if loop.index
+        < 4 %} {% if loop.index==1 %} <td><a href="{{row[3]}}" target="_blank">{{ d }}</a></td>
+            {% else %}
+            <td>{{ d }}</td>
+            {% endif %} {% endif %} {% endfor %}
+    </tr>
+    {% endfor %}
+</table>
+<Div class=addNew>
+    <a href="/newItem"><button>Add New Item</button></a>
+</Div>
+{% endblock %}

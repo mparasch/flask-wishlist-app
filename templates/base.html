@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="../static/styles/wishlist.css">
+</head>
+
+<body>
+
+    <Div id=header>
+        <div id="logout">
+            <a href="/"><button>Switch User</button></a>
+        </div>
+        <div id="user-settings">
+            <a href="/accountSettings"><button>User Settings</button></a>
+        </div>
+        <h1><a href="/home">Wishlist Connections</a></h1>
+        <h4><em>Welcome {{ name }}!</em></h4>
+    </Div>
+
+    <Div id=bodydiv>
+
+        <Div id=mylist>
+            {% block l_container %} {% endblock %}
+        </Div>
+
+    </Div>
+
+    <Div id=footer>
+        <p><em>Learning FLask</em></p>
+    </Div>
+
+</body>
+
+</html>

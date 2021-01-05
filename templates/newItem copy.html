@@ -1,0 +1,28 @@
+{% extends "base.html" %} {% block l_container %}
+<h3 class=header>New Item</h3>
+<div class=form>
+
+    <head>
+        <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600' rel='stylesheet' type='text/css'>
+        <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+    </head>
+
+    <body>
+        <div class="main-block">
+            <form action="/">
+                <div class="info">
+                    <label for="itemName">Item Name</label>
+                    <input type="text" name="itemName" placeholder="" required><br><br> <label for="priority">Priority </label>
+                    <select name="priority" type="text" placeholder="Priority" required>
+                <option value ="Low">Low</option>
+                <option value ="Medium">Medium</option>
+                <option value ="High">High</option>
+            </select> <br><br>
+                    <label for="notes">Notes</label>
+                    <textarea rows="3" cols="30" name="notes" type="text" placeholder="" required></textarea><br><br>
+                    <label for="link">Link</label>
+                    <input type="text" name="link" placeholder="" required><br><br>
+                    <button href="/">Submit</button>
+            </form>
+            </div>
+            {% endblock %}

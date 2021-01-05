@@ -1,0 +1,25 @@
+{% extends "base.html" %} {% block l_container %}
+<h3 class=header>New Item</h3>
+<form method="POST" action="" id="newItem">
+    <label for="itemName">Item Name
+        <input type="text" name="itemName" required>
+    </label>
+    <label for="priority">Priority
+        <select name="priority" type="text" placeholder='Low/Medium/High' required>
+                <option value ="Low">Low</option>
+                <option value ="Medium">Medium</option>
+                <option value ="High">High</option>
+            </select>
+    </label>
+    <label for="notes">Notes
+        <textarea rows="3" cols="30" name="notes" type="text" required></textarea>
+    </label>
+
+    <label for="link">Link
+        <input type="text" name="link" placeholder="https://" required>
+    </label>
+    <br>
+    <button type="submit">Submit</button>
+    <button type="button" value="Back" onclick="history.back()">Back</button>
+</form>
+{% endblock %}
