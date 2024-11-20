@@ -4,7 +4,13 @@ This project is an unfinished web application built with Flask that allows users
 
 ## Project Structure
 
-wishlist-app/ ├── SQL/ # SQL scripts for creating and managing database tables ├── static/styles/ # CSS styles for the webpages ├── templates/ # HTML templates and image assets for the app ├── venv/ # Virtual environment for the Python dependencies ├── main.py # Flask application script
+wishlist-app/  
+├── SQL/                  # SQL scripts for creating and managing database tables  
+├── static/styles         # CSS styles and image assets for the webpages  
+├── templates/            # HTML templates
+├── venv/                 # Virtual environment for the Python dependencies  
+└── main.py               # Flask application script  
+
 
 ---
 
